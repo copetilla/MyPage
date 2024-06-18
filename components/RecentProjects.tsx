@@ -14,9 +14,8 @@ const RecentProjects = () => {
                         <PinContainer title={'Visit'} href={link}>
                             <div className='relative flex items-center justify-center sm:w-[500px] w-[70vw] overflow-hidden h-[30vh] lg:h-[40vh] mb-10 sm:h-[40vh]'>
                                 <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                                    <img src='/bg.png' alt='bg-img' />
+                                    <img src={img} alt='bg-img' className='w-full h-full object-contain' />
                                 </div>
-                                <img src={img} alt={title} className=' z-10 absolute bottom-0' />
                             </div>
                             <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>{title}</h1>
                             <p className=' lg:text-xl lg:font-normal font-light text-sm line-clamp-2'>
@@ -34,7 +33,7 @@ const RecentProjects = () => {
                                     ))}
                                 </div>
                                 <div className='flex justify-center items-center'>
-                                    <p className='flex lg:text-lg md:text-xs text-sm text-purple'>Check Live Site</p>
+                                    <a href={link} target='_blank' className='flex lg:text-lg md:text-xs text-sm text-purple'>Check Live Site</a>
                                     <FaLocationArrow className='ms-3' color='#CBACF9' />
                                 </div>
                             </div>

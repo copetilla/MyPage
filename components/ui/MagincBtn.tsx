@@ -6,9 +6,10 @@ type MagincBtnType = {
     position?: string,
     handleClick?: () => void,
     otherClasses?: string,
+
 }
 
-const MagincBtn = ({ words, icon, position, handleClick, otherClasses, }: MagincBtnType) => {
+const MagincBtn = ({ words, icon, position, handleClick, otherClasses }: MagincBtnType) => {
     return (
         <button
             className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] md:w-60 md:mt-10"
