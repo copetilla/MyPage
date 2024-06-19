@@ -11,7 +11,7 @@ const Footer = () => {
                     <span className='text-purple'>contribute!</span>
                 </h1>
                 <p className="text-white-200 md:mt-10 my-5 text-center">
-                    Let's connect today and discuss how I can contribute to your team!
+                    Let&apos;s connect today and discuss how I can contribute to your team!
                 </p>
 
                 <EmailForm />
