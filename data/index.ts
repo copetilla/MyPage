@@ -148,7 +148,7 @@ export const workExperience = [
     },
     {
         id: 4,
-        title: "Bussiness Analyst projects",
+        title: "Business Analyst projects",
         desc: "Support the BA team by developing and updating different tools to help different departments - Amazon",
         className: "md:col-span-2",
         thumbnail: "/exp3.svg",
