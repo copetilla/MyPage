@@ -87,6 +87,22 @@ export const projects = [
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
         link: "https://github.com/copetilla/MyPage",
     },
+    {
+        id: 3,
+        title: "Ecommerce CMS",
+        des: "Headless e-commerce. For test the app use user: public@example.com, password: publicpassall",
+        img: "/cms.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", '/supabase-logo-icon.svg', "/c.svg"],
+        link: "https://eccomercecms.vercel.app/",
+    },
+    {
+        id: 3,
+        title: "Ecommerce Store",
+        des: "E-Commerce managed by the CMS. Test it by yourself!",
+        img: "/store.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", '/supabase-logo-icon.svg'],
+        link: "https://ecommercestore-eta.vercel.app/",
+    },
 
 ];
 
