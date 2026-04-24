@@ -1,28 +1,42 @@
-import { workExperience } from '@/data'
 import React from 'react'
 import { Button } from './ui/moving-border'
 import Image from 'next/image'
 
-const Experience = () => {
+interface ExperienceProps {
+    experience: any[];
+    messages: any;
+}
+
+const Experience = ({ experience, messages }: ExperienceProps) => {
     return (
         <div className='py-20' id='experience'>
-            <h1 className='heading'>My {' '}
-                <span className='text-purple'>work experience</span></h1>
+            <h1 className='heading'>
+                {messages.experienceGeneral.title} {' '}
+                <span className='text-guerrero-red'>{messages.experienceGeneral.titleHighlight}</span>
+            </h1>
+
             <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
-                {workExperience.map(card => (
+                {experience.map(card => (
                     <Button
                         key={card.id}
                         duration={Math.floor(Math.random() * 10000 + 10000)}
-                        className=' flex-1 text-white dark:border-slate-800'
+                        className='flex-1 text-white dark:border-slate-800 bg-guerrero-red'
                     >
-                        <div className='flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
-                            {/* <img src={card.thumbnail} alt='Thumbnail experience' className=' lg:w-32 md:w-20 w-16' /> */}
-                            <Image src={card.thumbnail} alt='Thumbnail experience' className=' lg:w-32 md:w-20 w-16' width={16} height={16} />
-                            <div className=' lg:ms-5'>
+                        <div className='flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 bg-guerrero-red'>
+                            <Image
+                                src={card.thumbnail}
+                                alt='Thumbnail experience'
+                                className='lg:w-32 md:w-20 w-16'
+                                width={128}
+                                height={128}
+                            />
+                            <div className='lg:ms-5'>
                                 <h1 className='text-start text-xl md:text-2xl font-bold'>
                                     {card.title}
                                 </h1>
-                                <p className='text-start text-white-100 mt-3 font-semibold'>{card.desc}</p>
+                                <p className='text-start text-white-100 mt-3 font-semibold'>
+                                    {card.desc}
+                                </p>
                             </div>
                         </div>
                     </Button>

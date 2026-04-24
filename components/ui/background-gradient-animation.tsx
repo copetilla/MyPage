@@ -3,14 +3,14 @@ import { cn } from "@/utils/cn";
 import { useEffect, useRef, useState } from "react";
 
 export const BackgroundGradientAnimation = ({
-    gradientBackgroundStart = "rgb(108, 0, 162)",
-    gradientBackgroundEnd = "rgb(0, 17, 82)",
-    firstColor = "18, 113, 255",
-    secondColor = "221, 74, 255",
-    thirdColor = "100, 220, 255",
-    fourthColor = "200, 50, 50",
-    fifthColor = "180, 180, 50",
-    pointerColor = "140, 100, 255",
+    gradientBackgroundStart = "#8B2626",
+    gradientBackgroundEnd = "#8B2626",
+    firstColor = "244, 239, 230",  // #F4EFE6 puro (Hueso)
+    secondColor = "234, 229, 215", // Crema un poco más cálido
+    thirdColor = "255, 250, 240",  // Blanco floral (brillo)
+    fourthColor = "210, 205, 195", // Arena claro (para sombras sutiles)
+    fifthColor = "240, 235, 225",
+    pointerColor = "255, 255, 255",
     size = "80%",
     blendingValue = "hard-light",
     children,

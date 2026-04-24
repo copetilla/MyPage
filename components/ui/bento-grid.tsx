@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+import { IoDownloadOutline } from "react-icons/io5";
 
 import Lottie from "react-lottie";
 
@@ -41,6 +41,7 @@ export const BentoGridItem = ({
     imgClassName,
     titleClassName,
     spareImg,
+    messages
 }: {
     className?: string;
     id: number;
@@ -50,46 +51,56 @@ export const BentoGridItem = ({
     imgClassName?: string;
     titleClassName?: string;
     spareImg?: string;
+    messages?: any;
 }) => {
     const leftLists = ["ReactJS", "React Native", "Typescript"];
     const rightLists = ["PostgreSQL", "NextJS", "MongoDB"];
 
-    const [copied, setCopied] = useState(false);
+    const [downloaded, setDownloaded] = useState(false);
 
     const defaultOptions = {
-        loop: copied,
-        autoplay: copied,
+        loop: false,
+        autoplay: false,
         animationData: animationData,
         rendererSettings: {
             preserveAspectRatio: "xMidYMid slice",
         },
     };
 
-    const handleCopy = () => {
-        const text = "gabrielgz2001@gmail.com";
-        navigator.clipboard.writeText(text);
-        setCopied(true);
+    const handleDownload = () => {
+        const cvPath = "/cv-gabriel-guerrero.pdf";
+
+        const link = document.createElement("a");
+        link.href = cvPath;
+        link.download = "CV_Gabriel_Guerrero.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        setDownloaded(true);
+        setTimeout(() => setDownloaded(false), 3000);
     };
 
     return (
         <div
             className={cn(
-                "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+                "row-span-1 text-white relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
                 className
             )}
             style={{
-                background: "rgb(4,7,29)",
+                background: "#8B2626",
                 backgroundColor:
                     "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
         >
             <div className={`${id === 6 && "flex justify-center"} h-full`}>
                 <div className="w-full h-full absolute">
+
                     {img && (
                         <img
                             src={img}
                             alt={img}
-                            className={cn(imgClassName, "object-cover object-center ")}
+                            className={cn(imgClassName, "object-cover object-center ", id === 1 ? "brightness-[0.8]" : "brightness-100")}
                         />
                     )}
                 </div>
@@ -121,7 +132,7 @@ export const BentoGridItem = ({
                         {description}
                     </div>
                     <div
-                        className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+                        className={cn("font-sans text-lg lg:text-3xl max-w-96 font-bold z-10", "whitespace-pre-line")}
                     >
                         {title}
                     </div>
@@ -160,7 +171,7 @@ export const BentoGridItem = ({
                         <div className="mt-5 relative">
 
                             <div
-                                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+                                className={`absolute -bottom-5 right-0 ${downloaded ? "block" : "block"
                                     }`}
                             >
                                 <Lottie
@@ -170,11 +181,11 @@ export const BentoGridItem = ({
                             </div>
 
                             <MagicButton
-                                words={copied ? "Email is Copied!" : "Copy my email address"}
-                                icon={<IoCopyOutline />}
+                                words={downloaded ? messages?.grid?.item6?.buttond : messages?.grid?.item6?.button}
+                                icon={<IoDownloadOutline />}
                                 position="left"
-                                handleClick={handleCopy}
-                                otherClasses="!bg-[#161A31]"
+                                handleClick={handleDownload}
+                                otherClasses="!bg-[#F4EFE6] !text-black"
                             />
                         </div>
                     )}

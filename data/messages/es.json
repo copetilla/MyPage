@@ -1,0 +1,115 @@
+{
+    "nav": {
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "references": "Referencias",
+        "experience": "Experiencia",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "badge": "Construido con Next.js",
+        "title": "Soluciones Innovadoras para Desafíos Modernos",
+        "description": "¡Hola! Soy Gabriel, un apasionado Desarrollador Full Stack",
+        "button": "Explora mi trabajo"
+    },
+    "grid": {
+        "item1": {
+            "title": "Resolver problemas reales mediante innovación digital y rigor técnico.",
+            "description": "Misión"
+        },
+        "item2": {
+            "title": "Crear software con estética, orden y creatividad.",
+            "description": "Visión"
+        },
+        "item3": {
+            "title": "Mi stack \n tecnológico",
+            "description": ""
+        },
+        "item4": {
+            "title": "Apasionado por aprender y crecer en el campo tecnológico.",
+            "description": ""
+        },
+        "item5": {
+            "title": "Arquitecturas escalables con un enfoque en código limpio.",
+            "description": "Calidad de Software"
+        },
+        "item6": {
+            "title": "¿Colaboramos para crear algo increíble?",
+            "description": "",
+            "button": "Descarga mi CV",
+            "buttond": "CV Descargado!"
+        }
+    },
+    "experienceGeneral": {
+        "title": "Mi",
+        "titleHighlight": "experiencia laboral"
+    },
+    "projectsGeneral": {
+        "title": "Una pequeña selección de",
+        "titleHighlight": "proyectos recientes",
+        "button": "Ver sitio en vivo"
+    },
+    "projects": {
+        "p1": {
+            "title": "Sitio de Eventos de Danza",
+            "des": "¡Organiza y participa en diferentes clases de baile disponibles!"
+        },
+        "p2": {
+            "title": "Mi Portafolio",
+            "des": "Un portafolio simple, elegante y moderno"
+        },
+        "p3": {
+            "title": "CMS de Ecommerce",
+            "des": "Ecommerce headless. Para probar usa usuario: public@example.com, clave: publicpassall"
+        },
+        "p4": {
+            "title": "Tienda de Ecommerce",
+            "des": "Tienda gestionada por el CMS. ¡Pruébala tú mismo!"
+        }
+    },
+    "experience": {
+        "exp1": {
+            "title": "Asociado de Soporte Técnico",
+            "desc": "Soporte a clientes de Amazon con dispositivos y servicios digitales - Amazon"
+        },
+        "exp2": {
+            "title": "Líder de Soporte Técnico",
+            "desc": "Solución de problemas, capacitación y asistencia a asociados del equipo - Amazon"
+        },
+        "exp3": {
+            "title": "Asociado Senior de Cumplimiento",
+            "desc": "Garantizar la seguridad del cliente eliminando productos retirados de las bases de datos - Amazon"
+        },
+        "exp4": {
+            "title": "Desarrollador de Automatización",
+            "desc": "Optimización de procesos empresariales mediante Power Platform, diseñando soluciones personalizadas con Power Apps, Power Automate y Power BI para diversos departamentos. - Hologic"
+        }
+    },
+    "clients": {
+        "title": "Palabras amables de",
+        "titleHighlight": "clientes satisfechos"
+    },
+    "testimonials": [
+        {
+            "quote": "Colaborar con Gabriel fue un absoluto placer. Su profesionalismo y dedicación para entregar resultados excepcionales fueron evidentes durante todo nuestro proyecto...",
+            "name": "Michael Johnson",
+            "title": "Director de AlphaStream Technologies"
+        }
+    ],
+    "footer": {
+        "title": "¡Listo para colaborar y",
+        "titleHighlight": "contribuir!",
+        "subtitle": "¡Conectemos hoy y hablemos sobre cómo puedo aportar a tu equipo!",
+        "copyright": "Copyright © 2026 Gabriel Guerrero"
+    },
+    "contact": {
+        "title": "Enviame un correo",
+        "placeholderName": "Nombre",
+        "placeholderEmail": "Correo electrónico",
+        "placeholderMessage": "Describe tu solicitud o pregunta...",
+        "submit": "Enviar",
+        "submitting": "Enviando...",
+        "success": "¡Email enviado con éxito!",
+        "error": "Algo salió mal, por favor reporta el error"
+    }
+}

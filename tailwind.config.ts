@@ -27,6 +27,12 @@ const config = {
     },
     extend: {
       colors: {
+        guerrero: {
+          red: "#8B2626",
+          "red-light": "#a52a2a",
+          "red-dark": "#4a0404",
+          secondary: "#F4EFE6",
+        },
         black: {
           DEFAULT: "#000",
           100: "#000319",

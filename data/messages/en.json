@@ -1,0 +1,115 @@
+{
+    "nav": {
+        "about": "About",
+        "projects": "Projects",
+        "references": "References",
+        "experience": "Experience",
+        "contact": "Contact"
+    },
+    "hero": {
+        "badge": "Built with Next.js",
+        "title": "Innovative Solutions for Modern Challenges",
+        "description": "Hi! I'm Gabriel, a passionate Full Stack Developer",
+        "button": "Explore my work"
+    },
+    "grid": {
+        "item1": {
+            "title": "Solving real-world problems through digital innovation and technical rigor",
+            "description": "Mission"
+        },
+        "item2": {
+            "title": "Creating software with aesthetics, order, and creativity.",
+            "description": "Vision"
+        },
+        "item3": {
+            "title": "My tech stack",
+            "description": "I constantly try to improve"
+        },
+        "item4": {
+            "title": "Passionate about learning and growing in the tech field.",
+            "description": ""
+        },
+        "item5": {
+            "title": "Scalable architectures with a focus on clean code.",
+            "description": "Software Quality"
+        },
+        "item6": {
+            "title": "Let's collaborate and create something amazing.",
+            "description": "",
+            "button": "Download my CV",
+            "buttond": "CV Downloaded!"
+        }
+    },
+    "experienceGeneral": {
+        "title": "My",
+        "titleHighlight": "work experience"
+    },
+    "projectsGeneral": {
+        "title": "A small selection of",
+        "titleHighlight": "recent projects",
+        "button": "Check Live Site"
+    },
+    "projects": {
+        "p1": {
+            "title": "Dance Event Site",
+            "des": "Host and participate in different dance classes available!"
+        },
+        "p2": {
+            "title": "My Portfolio",
+            "des": "A Simple, elegant, and modern portfolio"
+        },
+        "p3": {
+            "title": "Ecommerce CMS",
+            "des": "Headless e-commerce. For test use user: public@example.com, password: publicpassall"
+        },
+        "p4": {
+            "title": "Ecommerce Store",
+            "des": "E-Commerce managed by the CMS. Test it by yourself!"
+        }
+    },
+    "experience": {
+        "exp1": {
+            "title": "Tech support associate",
+            "desc": "Support Amazon customers with Amazon devices and digital services - Amazon"
+        },
+        "exp2": {
+            "title": "Tech support Leader",
+            "desc": "Problem solver, training, assist all associates in the Support Team - Amazon"
+        },
+        "exp3": {
+            "title": "Compliance Senior Associate",
+            "desc": "Ensure customer safety by removing recall products from Amazon databases - Amazon"
+        },
+        "exp4": {
+            "title": "Automation Developer",
+            "desc": "Optimizing business processes through Power Platform, designing custom solutions with Power Apps, Power Automate, and Power BI for various departments - Amazon"
+        }
+    },
+    "clients": {
+        "title": "Kind words from",
+        "titleHighlight": "satisfied clients"
+    },
+    "testimonials": [
+        {
+            "quote": "Collaborating with Gabriel was an absolute pleasure. His professionalism and dedication to delivering exceptional results were evident throughout our project...",
+            "name": "Michael Johnson",
+            "title": "Director of AlphaStream Technologies"
+        }
+    ],
+    "footer": {
+        "title": "Ready to collaborate and",
+        "titleHighlight": "contribute!",
+        "subtitle": "Let's connect today and discuss how I can contribute to your team!",
+        "copyright": "Copyright © 2026 Gabriel Guerrero"
+    },
+    "contact": {
+        "title": "Send me an email",
+        "placeholderName": "Name",
+        "placeholderEmail": "Email",
+        "placeholderMessage": "Describe your request or question...",
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "success": "Email sent successfully!",
+        "error": "Something happened, please report the bug"
+    }
+}

@@ -1,12 +1,20 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/bento-grid'
-import { gridItems } from '@/data'
+// Importamos la función en lugar de la constante estática
+import { getGridItems } from '@/data'
 
-const Grid = () => {
+interface GridProps {
+    messages: any; // Aquí vendrá el contenido de tu JSON (es.json o en.json)
+}
+
+const Grid = ({ messages }: GridProps) => {
+    // Generamos la lista de items usando las traducciones que vienen de los mensajes
+    const translatedGridItems = getGridItems(messages);
+
     return (
         <section id='about'>
             <BentoGrid className="w-full py-20">
-                {gridItems.map(({ id, title, description, className, img, imgClassName, titleClassName, spareImg }) => (
+                {translatedGridItems.map(({ id, title, description, className, img, imgClassName, titleClassName, spareImg }) => (
                     <BentoGridItem
                         id={id}
                         key={id}
@@ -17,6 +25,7 @@ const Grid = () => {
                         imgClassName={imgClassName}
                         titleClassName={titleClassName}
                         spareImg={spareImg}
+                        messages={messages}
                     />
                 ))}
             </BentoGrid>
