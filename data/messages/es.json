@@ -92,8 +92,15 @@
     "testimonials": [
         {
             "quote": "Colaborar con Gabriel fue un absoluto placer. Su profesionalismo y dedicación para entregar resultados excepcionales fueron evidentes durante todo nuestro proyecto...",
-            "name": "Michael Johnson",
-            "title": "Director de AlphaStream Technologies"
+            "name": "Aaron Fallas Alvarado",
+            "title": "Manager TPRM",
+            "image": "/aaron.jpg"
+        },
+        {
+            "quote": "Lo que más destaco de trabajar con Gabriel es su capacidad para entender los objetivos estratégicos y transformarlos en productos funcionales. Su comunicación es clara, directa y siempre está un paso adelante en la resolución de problemas técnicos, asegurando entregas de alta calidad.",
+            "name": "Camilo Duarte",
+            "title": "Server Operations Manager",
+            "image": "/camilo.jpg"
         }
     ],
     "footer": {
